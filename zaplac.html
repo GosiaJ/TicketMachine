@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Biletomat</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<script src="timer.js"></script>
+	<script language="JavaScript" type="text/javascript" src="klawiatura.js"></script>
+</head>
+
+<body onload="all()">
+<div id="container">
+<div id="toprectangle">
+<div id="zegar">2016:05:12:12:00:00</div>
+<div style="clear: both;"></div>
+</div>
+<div id="midrectangle">
+<div class="nawigacjanieaktywna" style="margin-left:20px;">
+Wybór rodzaju biletu
+</div>
+<img class="strzalkanieaktywna" src="images/arrowinactive2.png"></img>
+<div class="nawigacjanieaktywna">
+Wybór ilości biletów
+</div>
+<img class="strzalkaaktywna" src="images/arrowactive2.png"></img>
+<div class="nawigacjaaktywna">
+Płatność
+</div>
+<div style="clear: both;"></div>
+</div>
+<div id="mainarea">
+
+<div id="koszt"> Do zapłaty </div>
+<div id="powrott" style="margin-left:200px;"><a href="javascript:history.back()" class="nodecoration">POWRÓT</a></div>
+<div style="clear: both;"></div>
+<div id="gotowka"><a href="koniecgotowka.html" class="nodecoration2"><b>Płatność gotówką</b></a></div>
+<div id="karta"><a href="konieckarta.html" class="nodecoration2"><b>Płatność kartą</b></a></div>
+<div style="clear: both;"></div>
+</div>
+
+</body>
+</html>

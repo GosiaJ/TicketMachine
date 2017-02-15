@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Biletomat</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<script src="timer.js"></script>
+	<script>
+	localStorage.setItem("name", "dodatkowe");
+	</script>
+</head>
+
+<body onload="wpisz(); odliczanie();">
+<div id="container">
+<div id="toprectangle">
+<div id="zegar">2016:05:12:12:00:00</div>
+<div style="clear: both;"></div>
+</div>
+<div id="midrectangle">
+<div class="nawigacjanieaktywna" style="margin-left:20px;">
+Wybór rodzaju biletu
+</div>
+<img class="strzalkanieaktywna" src="images/arrowinactive2.png"></img>
+<div class="nawigacjaaktywna">
+Wybór ilości biletów
+</div>
+<img class="strzalkaaktywna" src="images/arrowactive2.png"></img>
+<div class="nawigacjanieaktywna">
+Płatność
+</div>
+<div style="clear: both;"></div>
+</div>
+<div id="mainarea">
+<div class="bilety">
+<div class="naglowek1">BILETY OKRESOWE</div>
+<div id="powrot"><a id="powrot2" href="javascript:history.back()" class="nodecoration">POWRÓT</a></div>
+<div id="zaplac"><a href="zaplac_30dni.html" class="nodecoration">ZAPŁAĆ</a></div>
+<div style="clear: both;"></div>
+<div class="biletybottom">
+<div id="naglowek2">BILETY MIESIECZNE</div>
+<div style="clear: both;"></div>
+<div id="naglowek3">GMINA WEJHEROWO</div>
+<div style="clear: both;"></div>
+<div id="napiswaski1">Bilet imienny, ważny pon-pt</div>
+<div style="clear: both;"></div>
+<div id="napiswaski2">Bilet imienny</div>
+<div style="clear: both;"></div>
+<div id="napiswaski3">Bilet na okaziciela</div>
+<div style="clear: both;"></div>
+</div>
+<div id="data"></div>
+<div id="wyborilosci1">
+<div style="margin-bottom:30px;">NORMALNY</div>
+<div id="wybierz1"><a href="#" class="nodecoration">WYBÓR</a></div>
+<div style="clear: both;"></div>
+<div id="wybierz2"><a href="#" class="nodecoration">WYBÓR</a></div>
+<div style="clear: both;"></div>
+<div id="wybierz3"><a href="#" class="nodecoration">WYBÓR</a></div>
+<div style="clear: both;"></div>
+</div>
+<div id="wyborilosci2">
+<div style="margin-bottom:30px;">ULGOWY</div>
+<div id="wybierz4"><a href="#" class="nodecoration">WYBÓR</a></div>
+<div style="clear: both;"></div>
+<div id="wybierz5"><a href="#" class="nodecoration">WYBÓR</a></div>
+<div style="clear: both;"></div>
+</div>
+<div style="clear: both;"></div>
+</div>
+</div>
+</div>
+<!-- *************************************************************** -->
+<!-- Wyskakujące okno  -->
+
+<!-- okno -->
+<div id="myModal" class="modal">
+  <!-- treść -->
+  <div class="modal-content-kal">
+  	<div id="kalendarz">
+  			<div id="popmies" onclick="zmienMies(1)"> < </div>
+			<div class="miesiac"></div>
+			<div id="nastmies" onclick="zmienMies(2)"> > </div>
+			<div style="clear: both;"></div>
+			<div class="dzien"></div>
+			<div class="przesun"></div>
+			<div class="liczba"></div>
+		</div>
+  </div>
+</div>
+<!-- *************************************************************** -->
+<script src="kalendarz.js"></script>
+</body>
+</html>

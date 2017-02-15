@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+	<meta charset="UTF-8"/>
+	<title>Biletomat</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" /> 
+	<link rel="stylesheet" href="style.css" type="text/css" />
+	<link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro" rel="stylesheet">
+	<script src="timer.js"></script>
+</head>
+
+<body onload="all();">
+<div id="container">
+<div id="toprectangle">
+<div id="zegar">2016:05:12:12:00:00</div>
+<div style="clear: both;"></div>
+</div>
+	<div id="midrectangle">
+	<div class="nawigacjanieaktywna" style="margin-left:20px;">
+		Wybór rodzaju biletu
+	</div>
+	<img class="strzalkanieaktywna" src="images/arrowinactive2.png"></img>
+	<div class="nawigacjaaktywna">
+		Wybór ilości biletów
+	</div>
+	<img class="strzalkaaktywna" src="images/arrowactive2.png"></img>
+	<div class="nawigacjanieaktywna">
+		Płatność
+	</div>
+	<div style="clear: both;"></div>
+	</div> 
+	<div id="mainarea">
+		<div class="bilety">
+			<div class="naglowek1">BILETY JEDNORAZOWE</div>
+			<div id="powrot"><a href="index.html" class="nodecoration">POWRÓT</a></div>
+			<div id="zaplac"><a href="zaplac.html" class="nodecoration">ZAPŁAĆ</a></div>
+			<div style="clear: both;"></div>
+			<div class="biletybottom">
+				<div class="naglowek2">BILETY CZASOWE</div>
+				<div style="clear: both;"></div>
+				<div id="napiswaski1">1 Godzinny, Linie Zwykłe</div>
+				<div style="clear: both;"></div>
+				<div id="napiswaski2">1 Godzinny, Wszystkie Linie</div>
+				<div style="clear: both;"></div>
+				<div id="napiswaski3">24 Godzinny, Wszystkie Linie</div>
+				<div style="clear: both;"></div>
+			</div>
+			<div id="wyborilosci1">
+			<div style="margin-bottom:30px;">NORMALNY</div>
+<!-- Zwykłe -->
+			<div id="minus" onclick="normZw(1)">-</div>
+			<div id="iloscnormzw">0</div>
+<!-- *************************************************************** -->
+<!-- Wyskakujące okno  -->
+
+<!-- okno -->
+				<div id="myModal" class="modal">
+  <!-- treść -->
+					<div class="modal-content">
+					<div id="klawiatura"></div>
+					</div>
+				</div>
+<!-- *************************************************************** -->
+				<div id="plus" onclick="normZw(2)">+</div>
+				<div style="clear: both;"></div>
+
+<!-- wszystkie linie  -->
+
+				<div id="minus"onclick="normWsz(1)">-</div>
+				<div id="iloscnormwsz">0</div>
+<!-- *************************************************************** -->
+<!-- Wyskakujące okno  -->
+
+<!-- okno -->
+				<div id="myModal" class="modal">
+				  <!-- treść -->
+					<div class="modal-content">
+						<div id="klawiatura"></div>
+					</div>
+				</div>
+<!-- *************************************************************** -->
+
+				<div id="plus" onclick="normWsz(2)">+</div>
+				<div style="clear: both;"></div>
+
+<!-- 24h wszystkie linie  -->
+
+				<div id="minus" onclick="normDobowe(1)">-</div>
+				<div id="doboweNorm">0</div>
+<!-- *************************************************************** -->
+<!-- Wyskakujące okno  -->
+
+<!-- okno -->
+				<div id="myModal" class="modal">
+  <!-- treść -->
+  					<div class="modal-content">
+  						<div id="klawiatura"></div>
+  					</div>
+				</div>
+<!-- *************************************************************** -->
+				<div id="plus" onclick="normDobowe(2)">+</div>
+				<div style="clear: both;"></div>
+			</div>
+
+<div id="wyborilosci2">
+<div style="margin-bottom:30px;">ULGOWY</div>
+<div id="minus" onclick="ulgZw(1)" value="ulgZwMin">-</div>
+<div id="ilosculgzw">0</div>
+<!-- *************************************************************** -->
+<!-- Wyskakujące okno  -->
+
+<!-- okno -->
+<div id="myModal" class="modal">
+  <!-- treść -->
+  <div class="modal-content">
+  <div id="klawiatura"></div>
+  </div>
+</div>
+<!-- *************************************************************** -->
+<div id="plus" onclick="ulgZw(2)" value="ulgZwPl">+</div>
+<div style="clear: both;"></div>
+
+<!-- wszystkie linie  -->
+
+<div id="minus" onclick="ulgWsz(1)" value="ulgWszMin">-</div>
+<div id="ilosculgwsz">0</div>
+
+<!-- *************************************************************** -->
+<!-- Wyskakujące okno  -->
+
+<!-- okno -->
+<div id="myModal" class="modal">
+  <!-- treść -->
+  <div class="modal-content">
+  <div id="klawiatura"></div>
+  </div>
+</div>
+<!-- *************************************************************** -->
+<div id="plus" onclick="ulgWsz(2)" value="ulgWszPl">+</div>
+<div style="clear: both;"></div>
+
+
+<div style="clear: both;"></div>
+
+<div id="minus" onclick="ulgDobowe(1)">-</div>
+<div id="doboweUlg">0</div>
+<!-- *************************************************************** -->
+<!-- Wyskakujące okno  -->
+
+<!-- okno -->
+<div id="myModal" class="modal">
+  <!-- treść -->
+  <div class="modal-content">
+  <div id="klawiatura"></div>
+  </div>
+</div>
+<!-- *************************************************************** -->
+<div id="plus" onclick="ulgDobowe(2)">+</div>
+<div style="clear: both;"></div>
+</div>
+
+<div style="clear: both;"></div>
+</div>
+
+<!-- <div id="help" style="background-color: black; color: white;">help</div> -->
+
+</div>
+</div>
+
+<script language="JavaScript" type="text/javascript" src="klawiatura.js"></script>
+
+</body>
+</html>

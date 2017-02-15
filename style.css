@@ -1,0 +1,817 @@
+html,body
+{
+	background: url(images/background.png);
+	background-repeat:no-repeat;
+	color: white;
+	font-size: 20px;
+	margin: 0;
+	width:1243px;
+	height:700px;
+	font-family: 'Source Sans Pro', sans-serif;
+}
+
+#container{
+	width:1243px;
+	height:700px;
+}
+
+#toprectangle{
+	width:1243px;
+	height:110px;
+}
+
+#midrectangle{
+	width:1243px;
+	height:110px;
+}
+
+#mainarea{
+	width:1243px;
+	height:480px;
+}
+
+#zegar{
+	float:left;
+	width:300px;
+	height:90px;
+	padding-left:10px;
+	padding-right:10px;
+	margin-left:450px;
+	margin-top:10px;
+	text-align:left;
+	font-size:35px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #022554;
+	border-radius: 25px;
+}
+#jezyki{
+	margin-top:10px;
+	padding-left:10px;
+	padding-right:10px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #022554;
+	float:left;
+	margin-left:300px;
+	border-radius: 25px;
+}
+.jezykduzy{
+	float:left;
+	opacity:0.8;
+	margin-top:5px;
+	margin-left:20px;
+}
+.jezykduzy:hover{
+	opacity:1;
+}
+.jezykmaly{
+	float:left;
+	margin-top:20px;
+	margin-left:20px;
+	opacity:0.8;
+}
+.jezykmaly:hover{
+	opacity:1;
+}
+.nawigacjaaktywna{
+	width:auto;
+	height:50px;
+	margin-top:20px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #6d4322;
+	font-size:35px;
+	float:left;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background:linear-gradient(to bottom right, #c79f2f, #c7791b);
+	border-radius: 25px;
+}
+.nawigacjanieaktywna{
+	width:auto;
+	height:55px;
+	margin-top:20px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #022554;
+	font-size:35px;
+	float:left;
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	background:linear-gradient(to bottom right, #013366, #021339);
+	border-radius: 25px;
+}
+.strzalkaaktywna{
+	width:50px;
+	float:left;
+	margin-top:40px;
+	margin-right:5px;
+	
+}
+.strzalkanieaktywna{
+	width:50px;
+	float:left;
+	margin-top:40px;
+	margin-right:5px;
+}
+.bilety{
+	width:1190px;
+	margin-left:20px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	height:430px;
+	background:linear-gradient(to bottom right, rgba(0,137,185,0.3), rgba(2,19,57,0.3));
+	border-radius: 25px;
+	margin-bottom:5px;
+	font-size:50px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+.naglowek1{
+	float:left;
+	width:650px;
+	margin-left:20px;
+	margin-right:20px;
+	height:40px;
+	margin-bottom:5px;
+	font-size:50px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+.naglowek2{
+	float:left;
+	width:650px;
+	margin-left:20px;
+	margin-right:20px;
+	height:40px;
+	margin-bottom:5px;
+	font-size:40px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+#naglowek2, #naglowek3{
+	float:left;
+	color: white;
+	width:650px;
+	margin-left:20px;
+	margin-right:20px;
+	height:40px;
+	margin-bottom:5px;
+	font-size:40px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+
+.przyciskszeroki{
+	width:700px;
+	margin-left:20px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	height:40px;
+	background:linear-gradient(to bottom right, #0089b9, #021339);
+	border-radius: 25px;
+	margin-bottom:5px;
+	font-size:50px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+#powrot{
+	float:left;
+	width:230px;
+	margin-left:0px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	height:30px;
+	background:linear-gradient(to bottom right, rgba(0,137,185,0.5), rgba(2,19,57,0.5));
+	border-radius: 25px;
+	margin-bottom:5px;
+	font-size:40px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+#powrot:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+}
+.zaplac{
+	display:none;
+	float:left;
+	width:230px;
+	margin-left:0px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	height:30px;
+	background:linear-gradient(to bottom right, rgba(199,159,47,0.9), rgba(199,121,27,0.9));
+	border-radius: 25px;
+	margin-bottom:5px;
+	font-size:40px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+.zaplac:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,199,199,0.8));
+}
+#zaplac{
+	/*display:none;*/
+	float:left;
+	width:230px;
+	margin-left:0px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	height:30px;
+	background:transparent;
+	border-radius: 25px;
+	margin-bottom:5px;
+	font-size:0px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+/*#zaplac:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,199,199,0.8));
+} 
+linear-gradient(to bottom right, rgba(199,159,47,0.9), rgba(199,121,27,0.9));
+*/
+a.nodecoration{
+	text-decoration:none;
+	display:block;
+	color:white;
+}
+a.nodecoration2{
+	padding-top:45px;
+	text-decoration:none;
+	display:block;
+	color:#04173b;
+	width: 400px;
+    height: 100px;
+}
+/*.przyciskszeroki:hover{
+	background:linear-gradient(to bottom right, #0089b9, white);
+}*/
+.przyciskwaski{
+	float:left;
+	width:640px;
+	margin-left:20px;
+	margin-right:20px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	height:10px;
+	background:linear-gradient(to bottom right, rgba(0,137,185,0.8), rgba(2,19,57,0.8));
+	border-radius: 25px;
+	margin-bottom:5px;
+	font-size:35px;
+	text-align:center;
+	padding-bottom:35px;
+}
+.przyciskwaski:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+}
+.przyciskbardzowaski{
+	float:left;
+	width:540px;
+	margin-left:20px;
+	margin-right:20px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	height:3px;
+	background:linear-gradient(to bottom right, rgba(0,137,185,0.8), rgba(2,19,57,0.8));
+	border-radius: 25px;
+	margin-bottom:3px;
+	font-size:30px;
+	text-align:center;
+	padding-bottom:35px;
+}
+.przyciskbardzowaski:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+}
+#napiswaski1, #napiswaski2, #napiswaski3{
+	float:left;
+	width:640px;
+	margin-left:20px;
+	margin-right:20px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	height:10px;
+	background:linear-gradient(to bottom right, rgba(0,137,185,0.3), rgba(2,19,57,0.3));
+	border-radius: 25px 0px 0px 25px;
+	margin-bottom:5px;
+	font-size:35px;
+	text-align:center;
+	padding-bottom:35px;
+}
+.biletybottom{
+	float:left;
+}
+#wyborilosci1, #wyborilosci2{
+	float:left;
+	width:230px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	height:auto;
+	background:linear-gradient(to bottom right, rgba(0,137,185,0.3), rgba(2,19,57,0.3));
+	border-radius: 25px;
+	font-size:35px;
+	text-align:center;
+}
+/*przycisk dodawania biletu ulgowego */
+#plus{ 
+	float:left;
+	width:50px;
+	height:44px;
+	font-size:40px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	border-radius: 0px 0px 25px 0px;
+	margin-bottom:5px;
+	cursor: pointer;
+}
+#plus:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+}
+/*przycisk odejmowania biletu ulgowego */
+#minus{
+	float:left;
+	width:50px;
+	height:44px;
+	font-size:40px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	border-radius: 0px 0px 0px 25px;
+	margin-left:3px;
+	margin-bottom:5px;
+	cursor: pointer;
+}
+#minus:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+}	
+/*okienko wyswietlania ilosci biletow ulgowych */
+#ilosculgowy3{
+	float:left;
+	width:87px;
+	height:44px;
+	font-size:40px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	border-radius: 25px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:5px;
+}
+#ilosculgowy3:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+}
+/*okienko wyswietlania ilosci biletow normalnych */
+#ilosculgwsz, #iloscnormzw, #iloscnormwsz,#ilosculgzw,#doboweNorm, #doboweUlg{
+	float:left;
+	width:87px;
+	height:44px;
+	font-size:40px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	border-radius: 25px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:5px;
+	cursor: pointer;
+}
+#ilosculgwsz:hover, #iloscnormzw:hover, #iloscnormwsz:hover, #ilosculgzw:hover,#doboweNorm:hover, #doboweUlg:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+}
+
+#wybierz1, #wybierz2, #wybierz3, #wybierz4, #wybierz5, #wybierz6, #wybierz7{
+	float:left;
+	width:210px;
+	height:44px;
+	font-size:35px;
+	border-style: outset;
+	border-width: 5px;
+	border-color: #041e4d;
+	border-radius: 25px;
+	margin-left:5px;
+	margin-right:5px;
+	margin-bottom:5px;
+	cursor: pointer;
+}
+#wybierz1:hover, #wybierz2:hover, #wybierz2:hover, #wybierz3:hover, #wybierz4:hover, #wybierz5:hover, #wybierz6:hover, #wybierz7:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+}
+#wybierz1 a:focus, #wybierz2 a:focus, #wybierz3 a:focus, #wybierz4 a:focus, #wybierz5 a:focus, #wybierz6 a:focus, #wybierz7 a:focus{
+	border-radius: 25px;
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,1));
+}
+#data{
+	float:left;
+	width:450px;
+	margin-left:20px;
+	margin-right:20px;
+	height:40px;
+	margin-bottom:5px;
+	font-size:45px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+
+/* Wyskakująca klawiatura */
+#klawiatura
+{
+	float: left;
+	width: 450px;
+	text-align: center;
+	min-height: 250px;
+	margin-left: 50px;
+}
+.cyfra
+{
+	width: 80px;
+	height: 80px;
+	font-size: 48px;
+	color: white;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	border: 3px solid black;
+	float: left;
+	cursor: pointer; 
+	border-radius: 15px;
+	background-color: #022554;
+}
+.cyfra:hover
+{
+	background-color: #011443;
+	color: white;
+	border: 3px solid black;
+}
+#wyswietl
+{
+	width: 290px;
+	height: 40px;
+	color: white;
+	font-size: 48px;
+	text-align: center;
+	padding: 5px;
+	margin: 5px;
+	border: 3px solid black;
+	cursor: pointer; 
+	border-radius: 15px;
+	background-color: #022554;
+}
+/* Zatwierdzanie miesięcy i dni w kalendarzu */
+.zatwierdz
+{
+	width: 230px;
+    height: 50px;
+	color: white;
+	font-size: 40px;
+	margin-left: 50px;
+	padding: 5px;
+	float: left;
+	cursor: pointer; 
+	border-radius: 15px;
+	background: linear-gradient(to bottom right, #196a84, #011f3d);
+	border: 3px outset #011f3d;
+}
+.zatwierdz:hover
+{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+	color: white;
+}
+.zatwierdz2
+{
+	width: 230px;
+    height: 50px;
+	color: white;
+	font-size: 40px;
+	margin-left: 50px;
+	padding: 5px;
+	float: left;
+	cursor: pointer; 
+	border-radius: 15px;
+	background: linear-gradient(to bottom right, #196a84, #011f3d);
+	border: 3px outset #011f3d;
+	margin-left:120px;
+	margin-top:10px;
+}
+.zatwierdz2:hover
+{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+	color: white;
+}
+.reset
+{
+	color: green;
+	cursor: pointer;
+	font-size: 48px;
+}
+.reset:hover
+{
+	color:white;
+}
+/* The Modal (background) */
+.modal 
+{
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 25px; /* Location of the box */
+	padding-left: 65px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+	font-size:30px;
+}
+/* Modal Content */
+.modal-content 
+{
+    background: linear-gradient(to bottom right, #196a84, #011f3d);
+    border-radius: 30px;
+    align:left;
+    padding: 20px;
+    border: 5px outset #011f3d;
+    width:400px;
+	height: 550px;
+}
+.modal-content-kal
+{
+    background: linear-gradient(to bottom right, #196a84, #011f3d);
+    border-radius: 30px;
+    align:left;
+    padding: 20px;
+    border: 5px outset #011f3d;
+    width: 550px;
+	height: 600px;
+}
+/* ******************** kalendarz *********************************** */
+#kalendarz
+{
+	float: left;
+	width: 500px;
+	text-align: center;
+	min-height: 250px;
+	margin-left: 25px;
+}
+.miesiac
+{
+	color: white;
+	float: left;
+	width: 400px;
+	text-align: center;
+}
+.dzien
+{
+	width: 45px;
+	height: 45px;
+	float: left;
+	text-align: center;
+	padding: 5px;
+	font-size:35px;
+	margin-left:8.5px;
+}
+.przesun
+{
+	width: 45px;
+	height: 45px;
+	padding: 2px;
+	margin: 7.4px;
+	float: left;
+}
+#popmies{
+	width: 30px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	padding: 2px;
+	margin: 5px;
+	border: 3px solid #3e798f;
+	float: left;
+	cursor: pointer; 
+	border-radius: 15px;
+	font-size:25px;
+}
+#nastmies
+{
+	width: 30px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	padding: 2px;
+	margin: 5px;
+	border: 3px solid #3e798f;
+	float: right;
+	cursor: pointer; 
+	border-radius: 15px;
+	font-size:25px;
+}
+.liczba
+{
+	width: 45px;
+	height: 45px;
+	color: white;
+	text-align: center;
+	padding: 2px;
+	margin: 5px;
+	border: 3px solid #3e798f;
+	float: left;
+	cursor: pointer; 
+	border-radius: 15px;
+	background-color: #022554;
+}
+.liczba:hover
+{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+	color: white;
+/*	border: 3px solid black; */
+}
+/* na i nb do listy miesięcy przy wyborze biletów miesięcznych*/
+.na
+{
+	width: 232px;
+	height: 55px;
+	border: 3px solid #3e798f;
+	border-radius: 30px;
+	float: left;
+	background: linear-gradient(to bottom right, rgb(17, 98, 140), rgb(1, 17, 42));
+	margin: 5px;
+	cursor: pointer;
+	margin-bottom:9px;
+	margin-top:12px;
+	font-size:40px;
+	
+}
+.nb
+{
+	width: 232px;
+	height: 55px;
+	border: 3px solid #3e798f;
+	border-radius: 30px;
+	float: left;
+	background: linear-gradient(to bottom right, rgb(17, 98, 140), rgb(1, 17, 42));
+	margin: 5px;
+	cursor: pointer;
+	margin-bottom:9px;
+	margin-top:12px;
+	font-size:40px;
+}
+.na:hover, .nb:hover
+{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+	color: white;
+}
+
+#rok
+{
+	width: 400px;
+	float: left;
+	font-size:40px;
+}
+#p
+{
+	width: 44px;
+	float: left;
+	cursor: pointer;
+	border: 3px solid #3e798f;
+	border-radius:15px;
+}
+#n
+{
+	width: 44px;
+	float: right;
+	cursor: pointer;
+	border: 3px solid #3e798f;
+	border-radius:15px;
+}
+#mies
+{
+	width: 500px;
+	float: left;
+}
+#wypiszdate
+{
+	color: black;
+	font-size:30px;
+}
+.na_nieaktywne
+{
+	width: 232px;
+	height: 55px;
+	border: 3px solid #3e798f;
+	border-radius: 30px;
+	float: left;
+	background: gray;
+	margin: 5px;
+	margin-bottom:9px;
+	margin-top:12px;
+	font-size:40px;
+}
+.nb_nieaktywne
+{
+	width: 232px;
+	height: 55px;
+	border: 3px solid #3e798f;
+	border-radius: 30px;
+	float: left;
+	background: gray;
+	margin: 5px;
+	margin-bottom:9px;
+	margin-top:12px;
+	font-size:40px;
+}
+#koszt, #koszt2, #koszt333
+{
+	float:left;
+	width:300px;
+	margin-left:470px;
+	text-align:center;
+	font-size:45px;
+	border: 5px solid #022554;
+	border-radius: 30px;
+	padding-bottom:20px;
+	border-style: outset;
+	background:linear-gradient(to bottom right, #013366, #021339);
+}
+
+#gotowka
+{
+	float:left;
+	width:400px;
+	height:100px;
+	margin-left:160px;
+	text-align:center;
+	font-size:45px;
+	border: 5px solid #6d4322;
+	border-radius: 30px;
+	border-style: outset;
+	background:linear-gradient(to bottom right, #c79f2f, #c7791b);
+	margin-top:50px;
+	color:#04173b;
+	padding-bottom:45px;
+}
+#gotowka:hover
+{
+	background:linear-gradient(to bottom right, #f5d6b0, #e28310);
+}
+#karta
+{
+	color:#04173b;
+	float:left;
+	width:400px;
+	height:100px;
+	margin-left:100px;
+	text-align:center;
+	font-size:45px;
+	border: 5px solid #6d4322;
+	border-radius: 30px;
+	border-style: outset;
+	background:linear-gradient(to bottom right, #c79f2f, #c7791b);
+	margin-top:50px;
+	padding-bottom:45px;
+}
+
+#karta:hover
+{
+	background:linear-gradient(to bottom right, #f5d6b0, #e28310);
+}
+#powrott{
+	float:left;
+	width:230px;
+	margin-left:0px;
+	border-style: outset;
+	border: 5px solid #022554;
+	height:30px;
+	background:linear-gradient(to bottom right, #013366, #021339);
+	border-radius: 25px;
+	margin-bottom:5px;
+	font-size:40px;
+	text-align:center;
+	padding-top:5px;
+	padding-bottom:25px;
+}
+#powrott:hover{
+	background:linear-gradient(to bottom right, rgba(199,159,47,1), rgba(199,121,27,0.1));
+}
